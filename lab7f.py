@@ -20,6 +20,9 @@ class Time:
    def __repr__(self):
             '''return a string representation for the object self'''
             return '%.2d.%.2d.%.2d' % (self.hour, self.minute, self.second)
+            
+   def __add__(self, t2):
+       return self.sum_times(t2)
 
    def format_time(self):
        """Return time object (t) as a formatted string"""
